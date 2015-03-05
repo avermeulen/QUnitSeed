@@ -8,9 +8,11 @@ It contains one Javascript Object in ```utility.js``` and a tests for it in ```u
 
 To run the tests open the ```test-setup.html``` file in a browser.
 
-##Gulp
+##Run tests from the terminal
 
-Gulp is like SBT. A build tool for Javascript, http://gulpjs.com/, - to run it one need node & npm installed.
+You can run your QUnit tests from the terminal using gulp.
+
+Gulp is a build tool for Javascript (@dave w - thinkSBT), http://gulpjs.com/, to run it one need node & npm installed.
 
 To install gulp, execute this command in the terminal:
 
