@@ -49,14 +49,19 @@ To setup travis we need to do a few things:
   * type ```npm install -s gulp-qunit```
 * exclude the ```./node_modules``` folder from github using the ```.gitignore``` file
   * in your project folder root create a .gitignore file using ```touch .gitignore```
-  * open the file and put ```node_modules/``` inside
+  * open the file and put ```node_modules/``` in it
   * save the file
 * create a gulp build file in ```gulpfile.js```
-  *  in your project folder root create a gulpfile.js file using ``` touch gulpfile.js```
-  * ???
+  * in your project folder root create a gulpfile.js file using ``` touch gulpfile.js```
+  * open the file and add this test into it : 
+  ```
+  
+  ```
 * setup a ```.travis.yml``` file
   *  in your project folder root create a gulpfile.js file using ``` touch .travis.yml```
-  * ???
+  * open the file and add this test into it : 
+  ```
+  ```
 
 
 
