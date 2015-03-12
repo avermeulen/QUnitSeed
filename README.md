@@ -64,13 +64,20 @@ var gulp = require('gulp'),
     gulp.task('test', function() {
     return gulp.src('./your-testfile-name0here.html')
         .pipe(qunit());
-});```
+});
+```
 
 * setup a ```.travis.yml``` file
   *  in your project folder root create a gulpfile.js file using ``` touch .travis.yml```
   * open the file and add this text into it : 
   ```
-  ```
+  .travis.yml:
+
+before_script:
+  - npm install
+
+script: gulp test
+```
 
 
 
