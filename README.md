@@ -24,3 +24,45 @@ In the QUnitSeed folder you need to execute the command below to install the plu
 
 After this you should be able to do ```gulp test``` from the terminal in the QUnitSeed folder.
 
+## Travis setup
+
+The project in this repository is already setup for Travis, but let's look at the steps involved in setting up your a project that is already using QUnit for testing in Travis.
+
+### What is Travis
+
+Travis is an online CI-tool, CI stands for Continuous Integration. This means that it will each time that your project's code changes in Github, run tasks on your code, such as running tests. We will use it for exactly that.
+
+We need a way of running the tests from the command line, we will use ```gulp``` for that. You can find it at gulpjs.com
+
+### Setup
+
+To setup travis we need to do a few things:
+
+* setup a ```npm``` project
+  * in a terminal in your project folder
+  * type ```npm init```
+  * press enter at each prompt that follows
+* install the ```gulp``` and ```gulp-qunit``` modules using ```npm``` 
+  * in a terminal in your project folder
+  * type ```sudo npm install -g gulp```
+  * type ```npm install -s gulp```
+  * type ```npm install -s gulp-qunit```
+* exclude the ```./node_modules``` folder from github using the ```.gitignore``` file
+  * in your project folder root create a .gitignore file using ```touch .gitignore```
+  * open the file and put ```node_modules/``` inside
+  * save the file
+* create a gulp build file in ```gulpfile.js```
+  *  in your project folder root create a gulpfile.js file using ``` touch gulpfile.js```
+  * ???
+* setup a ```.travis.yml``` file
+  *  in your project folder root create a gulpfile.js file using ``` touch .travis.yml```
+  * ???
+
+
+
+
+
+
+
+
+
