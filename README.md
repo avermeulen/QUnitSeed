@@ -57,8 +57,7 @@ To setup travis we need to do a few things:
   * you will need to put the name of your Qunit test file in here
   * then save the file
   * here is the text:
-
-```javascript
+  ```javascript
 var gulp = require('gulp'),
     qunit = require('gulp-qunit');
     gulp.task('test', function() {
@@ -66,7 +65,6 @@ var gulp = require('gulp'),
         .pipe(qunit());
 });
 ```
-
 * setup a ```.travis.yml``` file
   *  in your project folder root create a gulpfile.js file using ``` touch .travis.yml```
   * open the file, add this text into it and save it: 
@@ -79,7 +77,8 @@ before_script:
 script: gulp test
 ```
 
-*Once done:
+###Once done:
+
  * you should be able to run your tests from the command line by typing ```gulp test```, if this doesn't work something is wrong.
  * commit your code to github
  * Register and Login to http://travis.ci
