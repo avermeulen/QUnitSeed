@@ -69,7 +69,7 @@ var gulp = require('gulp'),
 
 * setup a ```.travis.yml``` file
   *  in your project folder root create a gulpfile.js file using ``` touch .travis.yml```
-  * open the file and add this text into it : 
+  * open the file, add this text into it and save it: 
   ```
   .travis.yml:
 
@@ -78,6 +78,19 @@ before_script:
 
 script: gulp test
 ```
+
+*Once done:
+ * you should be able to run your tests from the command line by typing ```gulp test```, if this doesn't work something is wrong.
+ * commit your code to github
+ * Register and Login to http://travis.ci
+ * it should find your all your github projects
+ * switch the project you would like to test on
+ * see the the build passes
+
+
+If you still have problems refers back to the setup in this project, ask a fellow coder or your Mentor! 
+ 
+
 
 
 
